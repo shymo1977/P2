@@ -11,7 +11,7 @@ function clearMessages(){
 }
 
 
-var argMoveId;
+let argMoveId;
 function getMoveName(argMoveId) {
     if (argMoveId == 1) {
     return 'kamień';
@@ -56,9 +56,9 @@ buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 
-var computerMove, playerMove;
+let computerMove, playerMove;
 function buttonClicked(argButtonName) {
-  var randomNumber;
+  let randomNumber;
   clearMessages();
   playerMove = argButtonName;
   console.log('Zagranie gracza to: ' + playerMove);
